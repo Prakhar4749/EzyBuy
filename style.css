@@ -209,9 +209,10 @@ input::placeholder {
 
 .gradient h4 {
     color: white;
-    height: 50px;
+    height: 70px;
     padding: 10px;
     letter-spacing: 1.5px;
+    overflow: hidden;
 
 }
 
@@ -278,6 +279,9 @@ div span:last-of-type{
 .countdown span{
     overflow: hidden;
 }
+.countdown h4{
+    overflow: hidden;
+}
 
 
 
@@ -287,22 +291,18 @@ div span:last-of-type{
   h1{
     font-size: 40px;
   }
-  
+  .countdown h4{
+    overflow: hidden;
+  }
   .countdown{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
-  .countdown > div{
-    background-color: #fff;
-    width: 250px;
-    height: 60px;
+
     margin: 0;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-  }
+
   div span:last-of-type{
   font-size: 24px;
     text-transform: uppercase;
@@ -322,7 +322,8 @@ div span:last-of-type{
 }
 .deals {
     margin: 40px 0;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .deals .card{
     width: 500px;
@@ -332,6 +333,7 @@ div span:last-of-type{
     text-align: center;
     background-color: rgb(255, 127, 80,40%);
     padding: 20px;
+    margin: 50px;
 }
 .deals-h h4{
     height: 50px;
@@ -552,5 +554,10 @@ footer .end {
         height: 25px;
 
     }
+    .container{
+        max-width: none;
+    }
+    .deals .card{
+        margin: 50px 0px ;
 
 }
