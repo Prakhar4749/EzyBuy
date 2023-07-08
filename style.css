@@ -204,6 +204,7 @@ input::placeholder {
 .gradient {
     min-height: 400px;
     background-image: linear-gradient(to right, rgb(51, 164, 164), rgb(255, 127, 80, 40%));
+    padding: 40px;
 }
 
 .gradient h4 {
@@ -219,6 +220,98 @@ input::placeholder {
     width: 100%;
     min-height: 300px;
 }
+
+
+/* timer  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #2C4A64;
+}
+
+h1{
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+.main{
+    text-align: center;
+}
+.countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+  
+.countdown > div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.25);
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: white;
+}
+.number {
+  font-weight: 500;
+  font-size: 44px;
+  color: #CAA78C;
+}
+
+div span:last-of-type{
+  font-size: 12px;
+}
+.countdown span{
+    overflow: hidden;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 40px;
+  }
+  
+  .countdown{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .countdown > div{
+    background-color: #fff;
+    width: 250px;
+    height: 60px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  div span:last-of-type{
+  font-size: 24px;
+    text-transform: uppercase;
+}
+  .number {
+  font-size: 34px;
+}
+}
+
 
 
 /* deal  */
