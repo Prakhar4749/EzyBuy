@@ -196,6 +196,9 @@ input::placeholder{
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px 0;
+    margin: auto;
+    
+
 }
 .footer-card{
     border: 2px solid rgb(208, 208, 208);
@@ -229,6 +232,7 @@ footer h4{
 
 .footer{
     padding: 60px 40px;
+    background-color: rgb(245,245,245);
 }
 footer .mid{
     padding: 25px 0;
