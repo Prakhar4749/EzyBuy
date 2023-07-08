@@ -148,12 +148,14 @@ input::placeholder{
     margin: 0 auto;
  }
   .container {
-    max-width: 400px;
+    /* max-width: 400px; */
+    width: 80%;
     margin: 0 auto;
     padding: 40px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.1);
+    margin-bottom: 4px;
   }
   h1 {
     font-size: 24px;
@@ -305,6 +307,7 @@ footer .end{
 
 @media (max-width:700px) {
   .sign{
+    margin: 40px;
     flex-direction: column;
   }
   .sign-img{
@@ -316,6 +319,12 @@ footer .end{
   .container{
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.1);
+  }
+}
+
+@media (max-width:400px) {
+  .sign{
+    margin: 25px;
   }
 }
 
