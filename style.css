@@ -1,42 +1,58 @@
 /* utilities */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow: auto;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
 }
-.flex{
+
+.flex {
     display: flex;
     /* justify-content: center; */
 }
-.flex-c{
+
+.flex-c {
     display: flex;
     flex-direction: column;
 }
-.container{
+
+.container {
     max-width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: auto;
     padding: 0 0;
     justify-content: space-between;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: white;
- }
- li:focus{
+}
+
+li:focus {
     color: white;
- }
-ul{
-    list-style: none;   
+}
+
+ul {
+    list-style: none;
     gap: 40px;
 }
-img,.orange-btn,.places-card,.card,.box,.navbar li,.navbar .left,i,a{
+
+img,
+.orange-btn,
+.places-card,
+.card,
+.box,
+.navbar li,
+.navbar .left,
+i,
+a {
     cursor: pointer;
 }
 
@@ -47,17 +63,18 @@ img,.orange-btn,.places-card,.card,.box,.navbar li,.navbar .left,i,a{
 
 /* navbar  */
 
-.color{
+.color {
     background-color: rgb(51, 164, 164);
     padding: 10px 0;
 }
 
-.middle{
+.middle {
     gap: 10px;
     align-items: center;
     margin: 0px 20px;
 }
-.searchcontainer{
+
+.searchcontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,21 +87,24 @@ img,.orange-btn,.places-card,.card,.box,.navbar li,.navbar .left,i,a{
     gap: 5px;
     padding: 0 10px;
 }
-.search{
+
+.search {
     width: 70%;
 }
-.searchbar{
+
+.searchbar {
     border: none;
     font-size: 10px;
     width: 90%;
     outline: none;
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 12px;
     letter-spacing: 1px;
 }
 
-.orange-btn{
+.orange-btn {
     background-color: rgb(255, 127, 80);
     color: white;
     width: 140px;
@@ -97,40 +117,45 @@ input::placeholder{
     gap: 5px;
 }
 
-.right, .logo{
+.right,
+.logo {
     gap: 20px;
     align-items: center;
     width: max-content;
 }
 
-.color-org{
-    background-color: rgb(255,127,80);
+.color-org {
+    background-color: rgb(255, 127, 80);
 }
-.navbar-2{
+
+.navbar-2 {
     color: white;
-    justify-content:center ;
+    justify-content: center;
     padding: 10px;
 }
-.navbar-2 ul{
+
+.navbar-2 ul {
     justify-content: space-between;
     margin: auto;
     gap: unset;
     width: 60%;
 }
-.navbar-2 ul a:hover{
-    color: rgb(51,164,164);
+
+.navbar-2 ul a:hover {
+    color: rgb(51, 164, 164);
 }
 
 
 /* top-menu */
 
-.top-menu{
+.top-menu {
     /* border: 2px solid red; */
-    
-    margin-top: 40px ;
+
+    margin-top: 40px;
     overflow-x: auto;
 }
-.top-menu .top-card{
+
+.top-menu .top-card {
     /* border: 2px solid green; */
     min-width: 80px;
     max-width: 80px;
@@ -140,16 +165,18 @@ input::placeholder{
     justify-content: center;
     align-items: center;
 }
-.circle{
+
+.circle {
     /* border: 1px solid black; */
     height: 80px;
     width: 80px;
     border-radius: 100%;
-    background-color: rgb(166,214,255);
+    background-color: rgb(166, 214, 255);
     align-items: center;
     justify-content: center;
 }
-.top-menu .top-card p{
+
+.top-menu .top-card p {
     height: 60px;
     text-align: center;
 }
@@ -159,98 +186,162 @@ input::placeholder{
 
 .c-item {
     object-fit: cover;
-  }
-  
-  .c-img {
+}
+
+.c-img {
     height: 100%;
     filter: brightness(0.6);
-  }
-  .shop-now{
+}
+
+.shop-now {
     background-color: aqua;
-  }
+}
 
 
 
 /* gradient  */
 
-.gradient{
-    min-height: 400px;    
-    background-image: linear-gradient(to right,rgb(51, 164, 164), rgb(255, 127, 80, 40%));
+.gradient {
+    min-height: 400px;
+    background-image: linear-gradient(to right, rgb(51, 164, 164), rgb(255, 127, 80, 40%));
 }
-.gradient h4{
+
+.gradient h4 {
     color: white;
     height: 50px;
     padding: 10px;
     letter-spacing: 1.5px;
 
 }
-.gradient .content{
+
+.gradient .content {
     border: 2px solid black;
     width: 100%;
-    min-height: 300px;}
+    min-height: 300px;
+}
+
+
+/* deal  */
+
+.deals-h {
+    margin: 40px 0;
+    justify-content: space-evenly;
+}
+.deals {
+    margin: 40px 0;
+    justify-content: space-between;
+}
+.deals .card{
+    width: 500px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 127, 80,40%);
+    padding: 20px;
+}
+.deals-h h4{
+    height: 50px;
+}
+.deals .button{
+
+}
+.deals .light-orange-btn {
+    background-color: white;
+    color: rgb(255, 127, 80);
+    width: 100px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    gap: 5px;
+    margin-right: 20px;
+}
+.deals .orange-btn{
+    width: 100px;
+    margin-left: 20px;
+}
+
 
 /* footer  */
 
 
-.one{
+.one {
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px 0;
+    padding: 20px 0;
     margin: auto;
-    
+
 
 }
-.footer-card{
+
+.footer-card {
     border: 2px solid rgb(208, 208, 208);
-    height: 250px;
+    height: 300px;
     width: 324px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     padding: 0px 10px;
-    
+
 }
-footer h4{
-    height: 50px;
+
+.footer-card img {
+    margin: 40px;
+}
+
+footer h4 {
+    height: 40px;
 }
 
 
-.two{
-    background-color:  rgb(51, 164, 164);
+footer .two {
+    background-color: rgb(51, 164, 164);
     text-align: center;
     color: white;
     padding: 60px;
 }
-.two .main{
+
+.two .main {
     justify-content: space-evenly;
     align-items: center;
 }
-.two .main .logo{
+
+.two .main .logo {
     margin: auto;
+    margin-bottom: 20px;
+}
 
+.two .main h4 {
+    margin-bottom: 0px;
 }
 
 
-.footer{
-    padding: 60px 40px;
-    background-color: rgb(245,245,245);
+.footer {
+    padding: 60px 0px;
+    background-color: rgb(245, 245, 245);
 }
-footer .mid{
+footer .mid {
     padding: 25px 0;
     justify-content: space-between;
-    overflow: auto;
     width: auto;
+    overflow: hidden;
     flex-wrap: wrap;
 }
-footer .mid .row{
+
+footer .mid .row {
     gap: 10px;
     letter-spacing: 0.5px;
     width: fit-content;
     overflow: hidden;
     padding: 10px;
-    
-    
+
+
 }
-footer .mid .row h5{
+
+footer .mid .row h5 {
     letter-spacing: 1px;
     font-weight: 900;
     width: fit-content;
@@ -258,36 +349,43 @@ footer .mid .row h5{
     font-size: medium;
     text-align: justify;
 }
-footer .mid .row p{
+
+footer .mid .row p {
     font-weight: 400;
     cursor: pointer;
     margin-left: 2px;
 }
-footer .mid .row p:hover{
-    color: rgb(51,164,164);
+
+footer .mid .row p:hover {
+    color: rgb(51, 164, 164);
 }
 
-footer .mid .row-5 div{
+footer .mid .row-5 div {
     gap: 20px;
 }
-footer .mid .row-5 div p{
+
+footer .mid .row-5 div p {
     margin-bottom: 0;
     max-width: 300px;
     font-size: 14px;
 }
-footer .mid .row .social{
+
+footer .mid .row .social {
     gap: 5px;
     align-items: center;
 }
-footer .end p{
+
+footer .end p {
     font-size: 12px;
     letter-spacing: 0.5px;
 }
-footer .end{
+
+footer .end {
     padding: 20px 0;
-} 
-.footer{
-    background-color: rgb(245,245,245);
+}
+
+.footer {
+    background-color: rgb(245, 245, 245);
 }
 
 
@@ -297,58 +395,69 @@ footer .end{
 /* navbar  */
 
 
-@media(max-width: 1050px){
-    header .container{
+@media(max-width: 1050px) {
+    header .container {
         max-width: unset;
     }
-    .navbar-2 ul{
+
+    .navbar-2 ul {
         width: 90%;
         padding-left: unset;
     }
 }
-@media(max-width: 970px){
-    
-    .searchcontainer{
+
+@media(max-width: 970px) {
+
+    .searchcontainer {
         width: 80vb;
         height: 30px;
     }
-    .orange-btn{
+
+    .orange-btn {
         width: 30vb;
         height: 30px;
     }
 }
-@media(max-width: 600px){
-    .searchcontainer{
+
+@media(max-width: 600px) {
+    .searchcontainer {
         width: 80vb;
         height: 25px;
     }
-    .orange-btn{
+
+    .orange-btn {
         width: 30vb;
         height: 25px;
     }
-    .navbar-2 ul{
+
+    .navbar-2 ul {
         width: 100%;
         margin: unset;
         font-size: small;
-        
+
     }
 }
-@media(max-width: 500px){
-    .color{
+
+@media(max-width: 500px) {
+    .color {
         padding: 10px 5px;
     }
-    .right{
+
+    .right {
         gap: 5px;
     }
-    .middle{
-        font-size:x-small;
+
+    .middle {
+        font-size: x-small;
     }
-    .searchcontainer{
+
+    .searchcontainer {
         height: 25px;
     }
-    .orange-btn{
+
+    .orange-btn {
         height: 25px;
-        
+
     }
-    
+
 }
