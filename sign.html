@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    
+    <!-- Header -->
+
+    <header>
+        <div class="color">
+
+            <div class="container flex navbar-1">
+                <div class=" flex logo">
+                    <img src="/index-image/logo white 1.png" alt="">
+                </div>
+                <div class="flex middle">
+                    <div class="searchcontainer">
+
+                        <div class="search">
+                            <input type="text" placeholder="what is in your  mind today?" class="searchbar" value=""
+                                target="no-outline">
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass" style="color: #696969"></i>
+                    </div>
+                    <div class="orange-btn flex"> Search </div>
+                </div>
+                <div class="flex right">
+                    <img src="/index-image/cart.png" alt="">
+                    <img src="/index-image/sign-in.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="color-org">
+            <div class="container flex navbar-2">
+                <ul class="flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="login.html">Account</a></li>
+                    <li><a href="cart.html">My cart</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sign Up Page -->
+
+    <section>
+        <div class="sign">
+
+            <div class="sign-img">
+                <img src="./login-image/create account.jpg" alt="loading...">
+            </div>
+
+            <div class="sign-main">
+                <div class="sign-logo">
+                    <img src="./login-image/logo bg remove.png" alt="loading...">
+                </div>
+                <div class="container">
+                    <h1>Create an Account</h1>
+                    <form onsubmit="signup(event)">
+                        <label for=""><b>Your Name</b></label>
+                      <input type="text" id="name" placeholder="First and Last name" required>
+                      <label for=""><b>Mobile Number</b></label>
+                      <input type="number" id="number" placeholder="Mobile Number" required>
+                      <label for=""><b>Email(optional)</b></label>
+                      <input type="email" id="email" placeholder="" required>
+                      <label for=""><b>Password</b></label>
+                      <input type="password" id="password" placeholder="At least 6 characters" required>
+                      <p>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from EzyBuy.</p>
+                      <br>
+                      <button type="submit">Create Account</button>
+                    </form>
+                    <br>
+                    <hr>
+                    <p>Already have an account? <a href="login.html">Sign In</a>.</p>
+                    <p>By creating an account, you agree to EzyBuy's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer></footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

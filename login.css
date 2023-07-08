@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , 'Sans-serif';
+    overflow: auto;
+}
+b{
+    font-weight: 600;
+}
+/* utilities */
+
+body{
+  line-height: 1.6;
+}
+.flex{
+  display: flex;
+  /* justify-content: center; */
+}
+.flex-c{
+  display: flex;
+  flex-direction: column;
+}
+.container-top{
+  max-width: 1300px;
+  margin:0 auto;
+  overflow: auto;
+  padding: 0 0;
+  justify-content: space-between;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+li:focus{
+  color: white;
+}
+ul{
+  list-style: none;   
+  gap: 40px;
+}
+img,.orange-btn,.places-card,.card,.box,.navbar li,.navbar .left,i,a{
+  cursor: pointer;
+}
+
+/* Header */
+
+
+/* navbar  */
+
+.color{
+  background-color: rgb(51, 164, 164);
+  padding: 10px 0;
+}
+
+.middle{
+  gap: 10px;
+  align-items: center;
+  margin: 0px 20px;
+}
+.searchcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  width: 450px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+  border: 1px solid rgb(232, 232, 232);
+  gap: 5px;
+  padding: 0 10px;
+}
+.search{
+  width: 70%;
+}
+.searchbar{
+  border: none;
+  font-size: 10px;
+  width: 90%;
+  outline: none;
+}
+input::placeholder{
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.orange-btn{
+  background-color: rgb(255, 127, 80);
+  color: white;
+  width: 140px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+  /* border: 1px solid rgb(0, 0, 0); */
+  gap: 5px;
+}
+
+.right, .logo{
+  gap: 20px;
+  align-items: center;
+  width: max-content;
+}
+
+.color-org{
+  background-color: rgb(255,127,80);
+}
+.navbar-2{
+  color: white;
+  justify-content:center ;
+  padding: 10px;
+}
+.navbar-2 ul{
+  justify-content: space-between;
+  margin: auto;
+  gap: unset;
+  width: 60%;
+}
+.navbar-2 ul a:hover{
+  color: rgb(51,164,164);
+}
+
+/* Sign Up Page */
+
+ .sign{
+    display: flex;
+    margin: 30px 200px;
+ }
+ .sign-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .sign-img img{
+    width: 70%;
+    border-radius: 8px;
+    margin: 0 auto;
+ }
+ .sign-main{
+    width: 50%;
+    text-align: center;
+ }
+ .sign-logo{
+    margin: 0 auto;
+ }
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  form{
+    text-align: left;
+  }
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  button {
+    background-color: #33a4a4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #008d8d;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+/* Footer */
+
+.one{
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+.footer-card{
+  border: 2px solid rgb(208, 208, 208);
+  height: 250px;
+  width: 324px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 10px;
+  
+}
+/* footer h4{
+  height: 50px;
+} */
+
+.two{
+  background-color:  rgb(51, 164, 164);
+  text-align: center;
+  color: white;
+  padding: 60px;
+}
+.two .main{
+  justify-content: space-evenly;
+  align-items: center;
+}
+.two .main .logo{
+  margin: auto;
+
+}
+.two .orange-btn{
+  margin-top: 30px;
+}
+footer .container-top{
+  max-width: 100%;
+}
+.footer{
+  padding: 60px 40px;
+}
+footer .mid{
+  padding: 25px 0;
+  justify-content: space-between;
+  overflow: auto;
+  width: auto;
+  flex-wrap: wrap;
+}
+footer .mid .row{
+  gap: 10px;
+  letter-spacing: 0.5px;
+  width: fit-content;
+  overflow: hidden;
+  padding: 10px;
+}
+footer .mid .row h5{
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: fit-content;
+  height: 30px;
+  font-size: medium;
+  text-align: justify;
+}
+footer .mid .row p{
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 2px;
+}
+footer .mid .row p:hover{
+  color: rgb(51,164,164);
+}
+
+footer .mid .row-5 div{
+  gap: 20px;
+}
+footer .mid .row-5 div p{
+  margin-bottom: 0;
+  max-width: 300px;
+  font-size: 14px;
+}
+footer .mid .row .social{
+  gap: 5px;
+  align-items: center;
+}
+footer .end p{
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+footer .end{
+  padding: 20px 0;
+} 
+.footer{
+  background-color: rgb(245,245,245);
+}
+
+
+/* Responsiveness */
+
+@media (max-width:1000px){
+  .sign{
+    margin: 60px;
+  }
+}
+
+@media (max-width:700px) {
+  .sign{
+    flex-direction: column;
+  }
+  .sign-img{
+    width: 100%;
+  }
+  .sign-main{
+    width: 100%;
+  }
+  .container{
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.1);
+  }
+}
+
+@media (max-width:370px){
+  .sign{
+    margin: 30px auto;
+  }
+  .sign-img img{
+    border-radius: 4px;
+  }
+  .container{
+    width: 80%;
+  }
+}
+
+/* navbar  */
+
+
+@media(max-width: 1050px){
+  header .container-top{
+      max-width: unset;
+  }
+  .navbar-2 ul{
+      width: 90%;
+      padding-left: unset;
+  }
+}
+@media(max-width: 970px){
+  
+  .searchcontainer{
+      width: 80vb;
+      height: 30px;
+  }
+  .orange-btn{
+      width: 30vb;
+      height: 30px;
+  }
+}
+@media(max-width: 600px){
+  .searchcontainer{
+      width: 80vb;
+      height: 25px;
+  }
+  .orange-btn{
+      width: 30vb;
+      height: 25px;
+  }
+  .navbar-2 ul{
+      width: 100%;
+      margin: unset;
+      font-size: small;
+      
+  }
+}
+@media(max-width: 500px){
+  .color{
+      padding: 10px 5px;
+  }
+  .right{
+      gap: 5px;
+  }
+  .middle{
+      font-size:x-small;
+  }
+  .searchcontainer{
+      height: 25px;
+  }
+  .orange-btn{
+      height: 25px;
+      
+  }
+  
+}
