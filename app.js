@@ -1,6 +1,10 @@
  // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
-  import { getAuth,createUserWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+ import{ 
+    getAuth, 
+    createUserWithEmailAndPassword,
+ } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,10 +20,14 @@
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const auth = getAuth()
+  const analytics = getAnalytics(app);
+
+  const auth = getAuth();
 
 //   Getting all the objects of HTML
 
+var names = document.getElementById("name")
+var numbers = document.getElementById("number")
 var emails = document.getElementById("email")
 var passwords = document.getElementById("password")
 
@@ -28,6 +36,8 @@ var passwords = document.getElementById("password")
 window.signup = function(e){
     e.preventDefault();
     var obj = {
+        names:names.value,
+        numbers:numbers.value,
         emails:emails.value,
         passwords:passwords.value,
     }
@@ -38,7 +48,7 @@ window.signup = function(e){
     })
     .catch(function(err)
     {
-        alert("Error" + err)
+        alert("Error in" + err)
     })
     console.log(obj)
 };
