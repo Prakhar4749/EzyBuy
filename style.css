@@ -199,6 +199,97 @@ input::placeholder {
     background-color: aqua;
 }
 
+/* Product Main CSS */
+
+.product-main h2{
+    margin-left: 70px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding: 30px;
+    padding-top: 16px;
+    overflow-x: scroll;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    margin-left: 40px;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    border: 2px solid #d6eded;
+    min-width: 240px;
+    border-radius: 8px;
+}
+.card-img{
+    width: 100%;
+    background-color: #d6eded;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.abc{
+    margin-right: 6px;
+    margin-top: 6px;
+    width: 21px;
+}
+.card-img img{
+    height: 150px;
+    width: 150px;
+    margin-right: 24px;
+}
+.card-text{
+    padding-left: 10px;
+    margin-top: 8px;
+}
+.card-text h5{
+    font-weight: 500;
+    font-size: 18px;
+}
+.card-text h6{
+    font-weight: 500;
+    font-size: 16px;
+}
+.price strike{
+    font-weight: 300;
+    font-size: 13px;
+    color: #cacaca;
+}
+.price button{
+    margin-left: 9px;
+    padding: 4px;
+    background-color: #E5F7EE;
+    border: none; 
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+.off{
+    font-size: 10px;
+    color: #03753c;
+}
+.cart-btn button{
+    padding: 4px 12px;
+    background-color: #ffffff;
+    color: #33A4A4;
+    border: 2px solid #33A4A4;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.cart-btn button:hover {
+    background-color: #33A4A4;
+    color: #ffffff;
+  }
+
+/* Product Main CSS End */
 
 
 /* gradient  */
@@ -219,7 +310,7 @@ input::placeholder {
 }
 
 .gradient .content {
-    border: 2px solid black;
+    
     width: 100%;
     min-height: 300px;
 }
@@ -317,7 +408,7 @@ div span:last-of-type{
 /* deal  */
 
 .deals-h {
-    margin: 40px 0;
+    margin-top: 40px ;
     justify-content: space-evenly;
 }
 .deals {
@@ -384,6 +475,9 @@ div span:last-of-type{
 footer h4 {
     height: 40px;
 }
+.footer-card p{
+    font-size: small;
+}
 
 
 footer .two {
@@ -408,6 +502,7 @@ footer .two {
 }
 .two p{
     color: #fff;
+    font-size: medium;
 }
 .our-mission{
     color: #fff;
@@ -499,6 +594,12 @@ footer .end {
         width: 90%;
         padding-left: unset;
     }
+    .product-main h2{
+        margin-left: 40px;
+      }
+      .cards{
+        margin-left: 10px;
+      }
 }
 
 @media(max-width: 970px) {
@@ -512,6 +613,12 @@ footer .end {
         width: 30vb;
         height: 30px;
     }
+    .product-main h2{
+        margin-left: 20px;
+      }
+      .cards{
+        margin-left: -10px;
+      }
 }
 
 @media(max-width: 600px) {
@@ -523,19 +630,49 @@ footer .end {
     .orange-btn {
         width: 30vb;
         height: 25px;
+        font-size: small;
     }
-
+    
     .navbar-2 ul {
         width: 100%;
         margin: unset;
         font-size: small;
+        
+    }
 
+    /* top menu  */
+
+
+    .top-menu {
+    
+        margin-top: 20px;
+    }
+    .top-card{
+        font-size: x-small;
+    } 
+    .top-card .circle{
+        width: 50px;
+        height: 50px;
+    }
+    .top-card .circle img{
+        width: 40px;
+        height: 40px;
+    }
+    .top-menu .top-card p {
+        height: 30px;
     }
 }
 
 @media(max-width: 500px) {
+    .navbar-2 ul {
+        font-size: x-small;
+        
+    }
     .color {
         padding: 10px 5px;
+    }
+    .orange-btn {
+        font-size: x-small;
     }
 
     .right {
