@@ -417,7 +417,7 @@ div span:last-of-type{
     flex-wrap: wrap;
 }
 .deals .card{
-    width: 500px;
+    max-width: 500px;
     height: 450px;
     justify-content: center;
     align-items: center;
@@ -426,12 +426,20 @@ div span:last-of-type{
     padding: 20px;
     margin: 50px;
 }
+.deals .one{
+    height: 350px;
+}
 .deals-h h4{
     height: 50px;
+}
+.deals p{
+    height: 100px;
+    font-size: small;
 }
 .deals .light-orange-btn {
     background-color: white;
     color: rgb(255, 127, 80);
+    font-size: medium;
     width: 100px;
     height: 36px;
     justify-content: center;
@@ -444,6 +452,9 @@ div span:last-of-type{
 .deals .orange-btn{
     width: 100px;
     margin-left: 20px;
+}
+.deals .card .button{
+    height: 100px;
 }
 
 
@@ -609,7 +620,7 @@ footer .end {
         height: 30px;
     }
 
-    .orange-btn {
+    .orange-btn ,.light-orange-btn {
         width: 30vb;
         height: 30px;
     }
@@ -627,10 +638,13 @@ footer .end {
         height: 25px;
     }
 
-    .orange-btn {
+    .orange-btn  {
         width: 30vb;
         height: 25px;
-        font-size: small;
+        font-size: x-small;
+    }
+    .light-orange-btn{
+        font-size: xx-small;
     }
     
     .navbar-2 ul {
@@ -638,6 +652,13 @@ footer .end {
         margin: unset;
         font-size: small;
         
+    }
+    .deals p{
+        height: 120px;
+        font-size: small;
+    }
+    .deals-h{
+        padding: 10px;
     }
 
     /* top menu  */
@@ -661,6 +682,9 @@ footer .end {
     .top-menu .top-card p {
         height: 30px;
     }
+
+    /* deals  */
+
 }
 
 @media(max-width: 500px) {
@@ -671,7 +695,7 @@ footer .end {
     .color {
         padding: 10px 5px;
     }
-    .orange-btn {
+    .orange-btn ,.light-orange-btn {
         font-size: x-small;
     }
 
