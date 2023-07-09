@@ -77,11 +77,11 @@ img,.orange-btn,.places-card,.card,.box,.navbar li,.navbar .left,i,a{
 .side1 h1{
     margin-top: 20px;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .side1 h2{
     margin: 15px 0px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .fn{
     display: flex;
@@ -211,17 +211,17 @@ button:hover {
     margin-left: 6px;
 }
 .p2{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     margin-left: 62px;
     color: red;
 }
 .s1 h6{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
 }
 .p3{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     margin-left: 1px;
 }
@@ -243,12 +243,12 @@ button:hover {
     margin-top: 15px;
 }
 .rupees h2{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     margin-left: 105px;
 }
 .total h2{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
 }
 .box{
@@ -264,13 +264,20 @@ button:hover {
 }
 .term h4{
     color: blue;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 10px;
 }
 .term p{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 15px;
     width: 98%;
+}
+
+.order h2{
+    font-weight: 500;
+}
+.box1 h5{
+    font-weight: 500;
 }
 
 
@@ -310,14 +317,14 @@ button:hover {
     }
     .payment{
         font-size: 8px;
-        font-weight: 20;
+        font-weight: 200;
     }
     .sides button{
         padding: 11px 6px;
     }
     .order h2{
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
     }
     .box{
         /* width: 200%; */
@@ -337,7 +344,7 @@ button:hover {
         font-size: 11px;
     }
     .term p{
-        font-weight: 15;
+        font-weight: 200;
         font-size: 12px;
     }
     .sides input{
@@ -386,14 +393,14 @@ button:hover {
     }
     .payment{
         font-size: 8px;
-        font-weight: 20;
+        font-weight: 200;
     }
     .sides button{
         padding: 11px 6px;
     }
     .order h2{
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
     }
     .side2{
         margin-left: 10px;
@@ -412,11 +419,11 @@ button:hover {
         width: 100%;
     }
     .term h4{
-        font-weight: 100;
+        font-weight: 200;
         font-size: 11px;
     }
     .term p{
-        font-weight: 15;
+        font-weight: 200;
         font-size: 12px;
     }
     .sides input{
@@ -522,23 +529,39 @@ input::placeholder{
 /* footer  */
 
 
-.one{
+.one {
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px 0;
+    padding: 20px 0;
     margin: auto;
 }
-.footer-card{
+
+.footer-card {
     border: 2px solid rgb(208, 208, 208);
-    height: 250px;
+    height: 300px;
     width: 324px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     padding: 0px 10px;
-    
+
+}
+
+.footer-card img {
+    margin: 40px;
 }
 footer h4{
     height: 50px;
+    font-weight: 600;
+}
+.missioning{
+    font-weight: 300;
+}
+.footer-card h4{
+    font-weight: 600;
+}
+.search-margin{
+    margin-top: 12px;
 }
 
 
@@ -580,14 +603,14 @@ footer .mid .row{
 }
 footer .mid .row h5{
     letter-spacing: 1px;
-    font-weight: 900;
+    font-weight: 600;
     width: fit-content;
     height: 25px;
     font-size: medium;
     text-align: justify;
 }
 footer .mid .row p{
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     margin-left: 2px;
 }

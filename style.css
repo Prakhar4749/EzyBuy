@@ -1,5 +1,7 @@
 /* utilities */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'poppins', sans-serif;
     line-height: 1.6;
 }
 
@@ -404,6 +406,12 @@ footer .two {
 .two .main h4 {
     margin-bottom: 0px;
 }
+.two p{
+    color: #fff;
+}
+.our-mission{
+    color: #fff;
+}
 
 
 .footer {
@@ -430,7 +438,7 @@ footer .mid .row {
 
 footer .mid .row h5 {
     letter-spacing: 1px;
-    font-weight: 900;
+    font-weight: 700;
     width: fit-content;
     height: 25px;
     font-size: medium;
