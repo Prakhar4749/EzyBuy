@@ -174,9 +174,7 @@ button:hover {
     /* margin-left: 30px; */
     font-size: 11px;
 }
-.rate{
-    /* margin-left: 45px; */
-}
+
 .quantity{
     display: block;
     font-size: 13px;
@@ -198,9 +196,7 @@ button:hover {
 .box1{
     margin-top: 20px;
 }
-.side2 hr{
-    /* width: 260px; */
-}
+
 .micro1{
     margin-left: 18px;
     color: red;
@@ -291,9 +287,7 @@ button:hover {
     }
     }
 @media (max-width:360px) {
-    .side1{
-        /* margin-left: 30px; */
-    }
+    
     .side1 h1{
         font-size: 22px;
     }
@@ -367,9 +361,7 @@ button:hover {
     
 }
 @media (max-width:400px) {
-    .side1{
-        /* margin-left: 30px; */
-    }
+    
     .side1 h1{
         font-size: 22px;
     }
