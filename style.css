@@ -180,6 +180,7 @@ input::placeholder {
 
 .top-menu .top-card p {
     height: 60px;
+    overflow: hidden;
     text-align: center;
 }
 
