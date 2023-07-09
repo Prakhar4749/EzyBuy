@@ -408,7 +408,7 @@ div span:last-of-type{
 /* deal  */
 
 .deals-h {
-    margin: 40px 0;
+    margin-top: 40px ;
     justify-content: space-evenly;
 }
 .deals {
@@ -475,6 +475,9 @@ div span:last-of-type{
 footer h4 {
     height: 40px;
 }
+.footer-card p{
+    font-size: small;
+}
 
 
 footer .two {
@@ -499,6 +502,7 @@ footer .two {
 }
 .two p{
     color: #fff;
+    font-size: medium;
 }
 .our-mission{
     color: #fff;
