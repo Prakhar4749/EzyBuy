@@ -212,6 +212,33 @@ input::placeholder{
     color: #33a4a4;
   }
 
+  @media (max-width:600px){
+    .product-main h2{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .card{
+        min-width: 200px;
+    }
+    .card-img img{
+        height: 100px;
+        width: 100px;
+        margin-right: 24px;
+    }
+    .card-text{
+        line-height: 20px;
+    }
+    .card-text h5{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .card-text i{
+        font-size: 10px;
+    }
+  .cart-btn button{
+    font-size: 12px;
+  }
+  }
 /* Cart Main CSS End */
 
 /* Footer */

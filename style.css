@@ -205,6 +205,7 @@ input::placeholder {
     margin-left: 70px;
     margin-top: 30px;
     font-weight: 500;
+    font-size: 24px;
 }
 .cards{
     display: flex;
@@ -215,6 +216,7 @@ input::placeholder {
     overflow-x: scroll;
     gap: 24px;
     scroll-snap-type: x mandatory;
+    height: fit-content;
     scroll-snap-align: start;
     margin-left: 40px;
 }
@@ -289,6 +291,37 @@ input::placeholder {
     color: #ffffff;
   }
 
+  @media (max-width:600px){
+    .product-main h2{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .cards{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .card{
+        min-width: 200px;
+    }
+    .card-img img{
+        height: 100px;
+        width: 100px;
+        margin-right: 24px;
+    }
+    .card-text{
+        line-height: 20px;
+    }
+    .card-text h5{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .card-text i{
+        font-size: 10px;
+    }
+  .cart-btn button{
+    font-size: 12px;
+  }
+  }
 /* Product Main CSS End */
 
 
@@ -313,6 +346,9 @@ input::placeholder {
     
     width: 100%;
     min-height: 300px;
+}
+.btn-deal-change{
+    gap: 20px
 }
 
 
@@ -394,12 +430,12 @@ div span:last-of-type{
     margin-top: 20px;
   }
 
-  div,span:last-of-type{
-  font-size: 24px;
-    text-transform: uppercase;
-}
+  
   .number {
   font-size: 34px;
+}
+.light-orange-btn{
+    font-size: 4px;
 }
 }
 
@@ -433,7 +469,7 @@ div span:last-of-type{
     height: 50px;
 }
 .deals p{
-    height: 100px;
+    height: 65px;
     font-size: small;
 }
 .deals .light-orange-btn {
@@ -654,7 +690,6 @@ footer .end {
         
     }
     .deals p{
-        height: 120px;
         font-size: small;
     }
     .deals-h{
