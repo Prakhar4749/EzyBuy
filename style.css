@@ -523,19 +523,49 @@ footer .end {
     .orange-btn {
         width: 30vb;
         height: 25px;
+        font-size: small;
     }
-
+    
     .navbar-2 ul {
         width: 100%;
         margin: unset;
         font-size: small;
+        
+    }
 
+    /* top menu  */
+
+
+    .top-menu {
+    
+        margin-top: 20px;
+    }
+    .top-card{
+        font-size: x-small;
+    } 
+    .top-card .circle{
+        width: 50px;
+        height: 50px;
+    }
+    .top-card .circle img{
+        width: 40px;
+        height: 40px;
+    }
+    .top-menu .top-card p {
+        height: 30px;
     }
 }
 
 @media(max-width: 500px) {
+    .navbar-2 ul {
+        font-size: x-small;
+        
+    }
     .color {
         padding: 10px 5px;
+    }
+    .orange-btn {
+        font-size: x-small;
     }
 
     .right {
